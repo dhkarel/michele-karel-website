@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Claude Code local config
+.claude/
+
+# Working files, not part of the website.
+# These contain internal review notes and must not end up in a public repo.
+*.docx
+*.zip
+Card revisions for Michele.txt

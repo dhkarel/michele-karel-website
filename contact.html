@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Michele J. Karel, PhD, ABPP</title>
+<meta name="description" content="Email Michele Karel to introduce yourself or to set up a 30 minute call about your geriatric mental health project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Michele J. Karel, PhD, ABPP<span>Geriatric Mental Health Consulting</span></a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">My Experience</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:36px">
+        <p class="eyebrow">Contact</p>
+        <h1>Get in touch</h1>
+        <p class="lede">I typically set up a 30 minute call for us to get to know each other and discuss your project and your hopes for collaboration. Tell me a little about what you are working on and I will be in touch.</p>
+      </div>
+
+      <div class="grid grid-2" style="gap:60px;align-items:start">
+        <div>
+          <!-- The form does not post anywhere. On submit, the script at the foot of
+               this page builds a mailto: link from the answers and opens the
+               visitor's email program with everything filled in. They press send.
+               The action below is the no-JavaScript fallback.
+
+               To switch to a hosted form service later, replace the action with the
+               endpoint and delete the script. The fields themselves need no changes. -->
+          <form class="form-grid" id="contact-form"
+                action="mailto:michelejkarelphd@gmail.com" method="post" enctype="text/plain">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="org">Organization <span class="hint">Optional</span></label>
+              <input type="text" id="org" name="organization" autocomplete="organization">
+            </div>
+            <fieldset class="field">
+              <legend>What kind of help are you looking for? <span class="hint">Check as many as apply.</span></legend>
+              <div class="checks">
+                <label><input type="checkbox" name="help" value="Not sure yet"> Not sure yet</label>
+                <label><input type="checkbox" name="help" value="A brainstorming partner"> A brainstorming partner</label>
+                <label><input type="checkbox" name="help" value="A proposal reviewer"> A proposal reviewer</label>
+                <label><input type="checkbox" name="help" value="A needs assessment, program design and implementation partner"> A needs assessment, program design and implementation partner</label>
+                <label><input type="checkbox" name="help" value="A strategic project advisor"> A strategic project advisor</label>
+                <label><input type="checkbox" name="help" value="A content creator or editor"> A content creator or editor</label>
+                <label><input type="checkbox" name="help" value="A writing partner"> A writing partner</label>
+                <label><input type="checkbox" name="help" value="Something else"> Something else</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="message">Tell me about your project
+                <span class="hint">A few sentences is plenty.</span>
+              </label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+              <button class="btn" type="submit">Send message</button>
+              <p class="form-note">This opens your own email program with your answers
+                already filled in. You will need to press send there.</p>
+              <p class="form-note" id="sent-note" hidden>Your email program should have opened.
+                If nothing happened, write to
+                <a href="mailto:michelejkarelphd@gmail.com">michelejkarelphd@gmail.com</a> instead.</p>
+            </div>
+          </form>
+        </div>
+
+        <aside>
+          <div class="card" style="background:var(--sand);border-color:var(--sand-deep)">
+            <h3>What happens next</h3>
+            <p>I will reply to answer any preliminary questions and, if it makes sense, find a time for us to talk.</p>
+            <h3 style="margin-top:26px">Prefer to write directly?</h3>
+            <p><a href="mailto:michelejkarelphd@gmail.com">michelejkarelphd@gmail.com</a></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <p class="name">Michele J. Karel, PhD, PLLC</p>
+        <p>Board Certified in Geropsychology<br>Geriatric Mental Health Consulting</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">My Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact me</a></li>
+          <li><a href="https://www.linkedin.com/in/michele-karel-85b91113/">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 Michele J. Karel, PhD, PLLC. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  var TO = 'michelejkarelphd@gmail.com';
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    function val(n) { var el = form.elements[n]; return el && el.value ? el.value.trim() : ''; }
+    var checked = Array.prototype.slice
+      .call(form.querySelectorAll('input[name="help"]:checked'))
+      .map(function (c) { return c.value; });
+
+    var lines = [];
+    lines.push('Name: ' + val('name'));
+    lines.push('Email: ' + val('email'));
+    if (val('organization')) lines.push('Organization: ' + val('organization'));
+    lines.push('');
+    if (checked.length) {
+      lines.push('Looking for:');
+      checked.forEach(function (c) { lines.push('  - ' + c); });
+      lines.push('');
+    }
+    lines.push('About the project:');
+    lines.push(val('message'));
+
+    var subject = 'Website inquiry' + (val('name') ? ' from ' + val('name') : '');
+    window.location.href = 'mailto:' + TO +
+      '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(lines.join('\r\n'));
+
+    var note = document.getElementById('sent-note');
+    if (note) note.hidden = false;
+  });
+})();
+</script>
+</body>
+</html>
